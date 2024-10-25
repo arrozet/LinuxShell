@@ -2,7 +2,9 @@
 
 ## Overview
 
-This project implements a UNIX shell that serves as a command interpreter, acting as an interface between the user and the operating system. The shell is designed to read commands entered by the user, create processes to execute those commands, and manage job control for both foreground and background tasks.
+This project implements a UNIX shell that serves as a command interpreter, acting as an interface between the user and the operating system. The shell is designed to read commands entered by the user, create processes to execute those commands, and manage job control for both foreground and background tasks. 
+
+The development environment began with **Ubuntu** and later transitioned to **WSL (Windows Subsystem for Linux)** for better compatibility and integration with Windows.
 
 ### Project Foundation
 
@@ -24,8 +26,6 @@ The initial development of the basic shell focused on implementing fundamental f
 - **Execution of Commands**: Implementing `execvp()` to run external commands.
 - **Job Control**: Basic handling of foreground and background jobs using `waitpid()` to manage process states.
 - **Signal Handling**: Basic signal handling to manage child processes.
-
-
 
 ## Enhancements
 
@@ -49,8 +49,27 @@ The following enhancements were added to the shell to address the limitations of
 
 ## Usage
 
-To compile and run the shell:
+### To Compile with All Flags Do:
 
+1. **First, go to the shell project directory:**
+    ```bash
+    cd /path/to/your/Shell_project/
+    ```
+
+2. **Compile:**
+    ```bash
+    gcc -Wall -Wextra -O2 -D_GLIBCXX_DEBUG Shell_project.c job_control.c -o shell
+    ```
+
+   *Note: Compiling with all flags is not mandatory, but it is recommended if you wish to continue developing and iterating on this version.*
+
+3. **Execute:**
+    ```bash
+    ./shell
+    ```
+
+---
+
+If you have problems with permissions in Ubuntu, execute:
 ```bash
-gcc Shell_project.c job_control.c -o shell
-./shell
+sudo chown -R $(whoami) /home/$(whoami)
