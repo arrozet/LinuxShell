@@ -1,2 +1,2 @@
 # LinuxShell
-Project developed for Operative Systems subject.
+Project developed for the Operating Systems course.
