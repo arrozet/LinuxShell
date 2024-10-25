@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/ampliaciones/conAnuncios
+/ayuda
+/ampliaciones
