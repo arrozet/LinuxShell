@@ -1,5 +1,14 @@
 # UNIX Shell Project
 
+## Table of Contents
+1. [Overview](#overview)
+2. [Project Foundation](#project-foundation)
+3. [Development of the Basic Shell](#development-of-the-basic-shell)
+4. [Enhancements](#enhancements)
+5. [Usage](#usage)
+   - [Compilation](#to-compile-with-all-flags-do)
+
+
 ## Overview
 
 This project implements a UNIX shell that serves as a command interpreter, acting as an interface between the user and the operating system. The shell is designed to read commands entered by the user, create processes to execute those commands, and manage job control for both foreground and background tasks. 
@@ -49,7 +58,7 @@ The following enhancements were added to the shell to address the limitations of
 
 ## Usage
 
-### To Compile with All Flags Do:
+### To compile with all flags do:
 
 1. **First, go to the shell project directory:**
     ```bash
